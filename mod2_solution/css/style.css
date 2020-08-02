@@ -2,8 +2,16 @@
 
 * {
     box-sizing: border-box;
+    text-align: center;
     margin: 0;
     padding: 0;
+    font-family: courier, arial, helvetica;
+    background-color: #FAF1CF;
+}
+
+h1 {
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 .row {
@@ -12,14 +20,40 @@
 
 p {
     background-color: lightgray;
-    padding: 10px;
+    padding-top: 75px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
     border: 5px solid black;
-    width: 90%;
     height: 200px;
-    margin: auto;
-    margin-top: 100px;
-    overflow: auto;
-    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    display: block;
+}
+
+.floatingbox {
+    padding: 10px 10px 10px 10px;
+    margin-top: -75px;
+    margin-right: -50px;
+    float: right;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+#box1 {
+    background-color: #84aa8c;
+    color: rgba(255,255,255,.8);
+}
+
+#box2 {
+    background-color: #5DAA68;
+    color: rgba(255,255,255,.8);
+}
+
+#box3 {
+    background-color: #3F6844;
+    color: rgba(255,255,255,.8);
 }
 
 /******* Desktop Version *******/
@@ -32,11 +66,22 @@ p {
 
 /******* Tablet Version *******/
 @media (min-width: 768px) and (max-width: 991px) {
-
+    .col-md-6 {
+        float: left;
+        width: 50%;
+    }
+    
+    .col-md-12 {
+        float: left;
+        width: 100%;
+    }
 }
 
 /******* Desktop Version *******/
 @media (max-width: 767px) {
-
+    .col-xs-12 {
+        float: left;
+        width: 100%;
+    }
 }
 
